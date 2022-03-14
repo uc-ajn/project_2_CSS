@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>CssProject2</title>
+</head>
+
+<body class="flex-center">
+    <div class="main_container">
+        <!-- Title bar -->
+        <div class="title_bar">
+            <p>Format cells</p>
+            <div class="title_bar_controls">
+                <button id="btn1" class="btn"></button>
+                <button id="btn2" class="btn"></button>
+            </div>
+        </div>
+        <div class="body">
+            <!-- Selection buttons -->
+            <div class="body_btns flex-left">
+                <button class="bodyButtans">Number</button>
+                <button class="bodyButtans">Alignment</button>
+                <button class="bodyButtans" id="fontBtn">Font</button>
+                <button class="bodyButtans">Border</button>
+                <button class="bodyButtans">Patterns</button>
+                <button class="bodyButtans">Protection</button>
+            </div>
+            <div class="body_contact">
+                <div class="fonts_container">
+                    <!-- Font section -->
+                    <div class="font_select">
+                        <label for="Font"> <u>F</u>ont:</label>
+                        <input type="text" name="Font" value="Verdana">
+                        <div class="fonts">
+                            <ul>
+                                <div>
+                                    <div class="fonts_inside">
+                                        <img src="/images/TT font.png" alt="">
+                                        <li>Tw Cen MT</li>
+                                    </div>
+                                    <div class="fonts_inside">
+                                        <img src="/images/TT font.png" alt="">
+                                        <li>Tw Cen MT Condensed</li>
+                                    </div>
+                                    <div class="fonts_inside">
+                                        <img src="/images/TT font.png" alt="">
+                                        <li>Tw Cen MT Condensed</li>
+                                    </div>
+                                    <div class="fonts_inside">
+                                        <img src="/images/TT font.png" alt="">
+                                        <li>Verdana</li>
+                                    </div>
+                                    <li>Verdana</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="font_style">
+                        <label for="font_style">F<u>o</u>nt style</label>
+                        <input type="text" value="Regular">
+                        <ul>
+                            <li>Regular</li>
+                            <li>Italic</li>
+                            <li>Bold</li>
+                            <li>Bold Italic</li>
+                        </ul>
+                    </div>
+                    <div class="size">
+                        <label for="size"><u>S</u>ize</label>
+                        <input type="text" value="10">
+                        <ul>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="underline_color">
+                    <div class="underline">
+                        <label for="Underline"><u>U</u>nderline:</label>
+                        <select name="None" id="none">
+                            <option value="None">None</option>
+                        </select>
+                    </div>
+
+                    <div class="color">
+                        <label for="color"><u>C</u>olor:</label>
+                        <select name="color" id="color">
+                            <option value="Automatic">Automatic</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="" value="">
+                        <label for="normalfont"><u>N</u>ormal font</label>
+                    </div>
+                </div>
+
+                <!-- Effects and preview section  -->
+                <div class="effects">
+                    <fieldset class="fieldset1">
+                        <legend>Effects</legend>
+                        <div class="radiosbtn">
+                            <ul>
+                                <li>
+                                    <input type="checkbox">
+                                    <label for="">Strikethrough</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label for="">Superscript</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" accesskey="b">
+                                    <label for="">Subscript</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+
+                    <div class="preview">
+                        <fieldset class="fieldset2">
+                            <legend>Preview</legend>
+                            <div class="preview_contect">
+                                <p id="first_para">____</p>
+                                <div id="sec_Para">
+                                    <p>AaBbCcYyZz</p>
+                                </div>
+                                <p id="third_Para">____</p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="para">
+                    <p>This is a true Type font. The same font will
+                        be used on both your printer and your screen.</p>
+                </div>
+            </div>
+            
+            <!-- submit buttins  -->
+            <div class="submit_btn">
+                <input type="button" value="OK">
+                <input type="button" value="Cancel">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
