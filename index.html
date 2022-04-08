@@ -32,37 +32,30 @@
             </div>
             <div class="body_contact">
                 <div class="fonts_container flex">
-                    <!-- Font section -->
                     <div class="font_select">
-                        <label for="Font"> <u>F</u>ont:</label>
-                        <input type="text" name="Font" value="Verdana" class="display_block">
+                        <label for="Font" accesskey="F"> <u>F</u>ont:</label>
+                        <input type="text" name="Font" id="Font" value="Verdana" class="display_block">
                         <div class="fonts">
-                            <ul>
-                                <div>
-                                    <div class="flex font_scroll">
-                                        <img src="./images/TT font.png" alt="">
-                                        <li>Tw Cen MT</li>
-                                    </div>
-                                    <div class="flex font_scroll">
-                                        <img src="./images/TT font.png" alt="">
-                                        <li>Tw Cen MT Condensed</li>
-                                    </div>
-                                    <div class="flex font_scroll">
-                                        <img src="./images/TT font.png" alt="">
-                                        <li>Tw Cen MT Condensed</li>
-                                    </div>
-                                    <div class="flex active_bg">
-                                        <img src="./images/TT font.png" alt="">
-                                        <li>Verdana</li>
-                                    </div>
-                                    <li>Verdana</li>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">Tw Cen MT
+                            </div>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">Tw Cen MT Condensed
+                            </div>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">Tw Cen MT Condensed
                                 </div>
-                            </ul>
+                                <div class="flex active_bg">
+                                    <img src="./images/TT-font.png" alt="TTfont">Verdana
+                                </div>
+                                <div>
+                                    <img src="./images/TT-font.png" alt="TTfont">Verdana
+                                </div>
                         </div>
                     </div>
                     <div class="font_style">
-                        <label for="font_style">F<u>o</u>nt style:</label>
-                        <input type="text" value="Regular">
+                        <label for="font_style" accesskey="o">F<u>o</u>nt style:</label>
+                        <input type="text" name="Regular" id="font_style" value="Regular">
                         <ul>
                             <li class="active_bg">Regular</li>
                             <li>Italic</li>
@@ -71,8 +64,8 @@
                         </ul>
                     </div>
                     <div class="size">
-                        <label for="size"><u>S</u>ize:</label>
-                        <input type="text" value="10">
+                        <label for="size" accesskey="S"><u>S</u>ize:</label>
+                        <input type="text" id="size" name="size" value="10">
                         <ul>
                             <li>8</li>
                             <li>9</li>
@@ -85,21 +78,22 @@
 
                 <div class="underline_color flex">
                     <div class="underline">
-                        <label class="display_block" for="Underline"><u>U</u>nderline:</label>
-                        <select name="None" id="none">
+                        <label class="display_block" for="Underline" id="underline"
+                            accesskey="U"><u>U</u>nderline:</label>
+                        <select name="Underline" id="Underline">
                             <option value="None">None</option>
                         </select>
                     </div>
 
                     <div class="color">
-                        <label class="display_block" for="color"><u>C</u>olor:</label>
+                        <label class="display_block" for="color" accesskey="C"><u>C</u>olor:</label>
                         <select name="color" id="color">
                             <option value="Automatic">Automatic</option>
                         </select>
                     </div>
                     <div class="checkbox flex">
-                        <input type="checkbox" checked name="" id="" value="">
-                        <label for="normalfont"><u>N</u>ormal font</label>
+                        <input type="checkbox" id="normalfont" checked name="normalfont" value="Normal-font">
+                        <label for="normalfont" accesskey="N"><u>N</u>ormal font</label>
                     </div>
                 </div>
 
@@ -110,16 +104,16 @@
                         <div class="radiosbtn">
                             <ul>
                                 <li class="flex">
-                                    <input type="checkbox">
-                                    <label for="">Strikethrough</label>
+                                    <input type="checkbox" id="Strikethrough">
+                                    <label for="Strikethrough">Strikethrough</label>
                                 </li>
                                 <li class="flex">
-                                    <input type="checkbox">
-                                    <label for="">Superscript</label>
+                                    <input type="checkbox" id="Superscript" accesskey="b">
+                                    <label for="Superscript">Superscript</label>
                                 </li>
-                                <li class="flex"> 
-                                    <input type="checkbox" accesskey="b">
-                                    <label for="">Subscript</label>
+                                <li class="flex">
+                                    <input type="checkbox" id="Subscript" accesskey="b">
+                                    <label for="Subscript">Subscript</label>
                                 </li>
                             </ul>
                         </div>
@@ -144,7 +138,7 @@
                         be used on both your printer and your screen.</p>
                 </div>
             </div>
-            
+
             <!-- submit buttins  -->
             <div class="submit_btn">
                 <input type="button" id="btn_ok" value="OK">

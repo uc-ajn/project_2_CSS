@@ -141,6 +141,7 @@ body {
 
 .fonts{
   border: 1px solid gray;
+      width: 167px;
   height: 65px;
   overflow-y: scroll;
   margin-left: 5px;
@@ -182,7 +183,7 @@ body {
   scrollbar-color: blue;
 }
 
-.size li, .font_scroll li,.font_style li{
+.size li,.font_style li{
   list-style: none;
 }
 
