@@ -15,7 +15,7 @@ Update Date : 04/08/2022 */
 }
 
 body {
-  margin-top: 50px; 
+  margin-top: 80px; 
 }
 /* These are global CSS classes */
 .flex{
@@ -23,20 +23,40 @@ body {
 }
 
 .flex-center {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .flex-left {
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
 }
 
 .display_block{
   display: block;
 } 
+
+.align_items_Center{
+  align-items: center;
+}
+
+.border-gray{
+  border: 1px solid gray;
+}
+
+.margin-left{
+  margin-left: 5px;
+}
+
+.height65{
+  height: 65px;
+}
+
+.overflow_y{
+  overflow-y: scroll;
+}
+
+.justify_content_spceBTN{
+  justify-content: space-between;
+}
 
 .title_bar {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -56,8 +76,6 @@ body {
   );
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .title_bar p {
@@ -82,7 +100,7 @@ body {
   background-image: url(./images/help.svg);
 }
 #btn1:hover {
-  background-image: url(./images/close-hover.svg);
+  background-image: url(./images/help-hover.svg);
 }
 #btn1:active {
   background-image: url(./images/help-active.svg);
@@ -129,10 +147,9 @@ body {
 
 .body_contact {
   width: 425px;
-  height: 305px;
-  border: 1px solid gray;
+  height: 310px;
   margin-top: -1px;
-  background-color: #fbfbfc;
+  background: linear-gradient(white, #F4F3EE);
 }
 
 .fonts_container{
@@ -140,29 +157,19 @@ body {
 }
 
 .fonts{
-  border: 1px solid gray;
-      width: 167px;
-  height: 65px;
-  overflow-y: scroll;
-  margin-left: 5px;
+  width: 170px;
 }
-
-.active_bg{
-  background: #2E6AC3;
-  color: white;
-}
-
 .font_select input{
-  width: 172px;
+  width: 175px;
 }
 
 .font_select img{
   height: 14px;
 }
 
-.font_scroll:hover ,.font_style li:hover ,.size li:hover{
+.active_bg, .font_scroll:hover ,.font_style li:hover ,.size li:hover{
   background: #2E6AC3;
-  color: #fff;
+  color: white;
 }
 
 .font_style{
@@ -175,12 +182,6 @@ body {
 
 .font_style ul{
   width: 115px;
-  height: auto;
-  border: 1px solid gray;
-  margin-left: 5px;
-  height: 65px;
-  overflow-y: scroll;
-  scrollbar-color: blue;
 }
 
 .size li,.font_style li{
@@ -196,28 +197,12 @@ body {
   width: 70px;
 }
 
-.size ul{
-  border: 1px solid gray;
-  margin-left: 5px;
-  height: 65px;
-  overflow-y: scroll;
-  scrollbar-color: blue;
-}
-
 .underline_color ,.checkbox{
   margin-top: 10px;
 }
 
-.underline{
-  margin-left: 5px;
-}
-
 .color{
   margin-left: 10px;
-}
-
-.underline label, .color label{
-  display: block;
 }
 
 .underline select, .color select{
@@ -253,9 +238,8 @@ legend{color: #0046d5;}
 }
 
 .effects li{
-  align-items: center;
   font-size: 14px;
-  margin: 4px 0px 0px 0px ;
+  margin-top: 2px;
 }
 
 .fieldset2{
@@ -270,7 +254,6 @@ legend{color: #0046d5;}
   padding-top: 10px;
   height: 59px;
   margin: 0px 5px;
-  justify-content: space-between;
   padding-top: 15px;
 }
 
@@ -292,7 +275,7 @@ legend{color: #0046d5;}
   box-shadow: none;
   width: 70px;
   height: 20px;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 #btn_ok{
@@ -306,3 +289,5 @@ legend{color: #0046d5;}
 .submit_btn input:hover{
   box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4, inset 2px -2px #89ade4;
  }
+
+ 

@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <title>CssProject-2</title>
+    <title>Css_Project2</title>
 </head>
 
-<body class="flex-center">
+<body class="flex-center flex align_items_Center">
     <div class="main_container">
         <!-- Title bar -->
-        <div class="title_bar flex">
+        <div class="title_bar flex align_items_Center justify_content_spceBTN">
             <p>Format cells</p>
             <div class="title_bar_controls">
                 <button id="btn1" class="btn"></button>
@@ -22,7 +22,7 @@
         </div>
         <div class="body">
             <!-- Selection buttons -->
-            <div class="body_btns flex-left">
+            <div class="body_btns flex-left flex align_items_Center">
                 <button class="bodyButtans">Number</button>
                 <button class="bodyButtans">Alignment</button>
                 <button class="bodyButtans" id="fontBtn">Font</button>
@@ -30,15 +30,15 @@
                 <button class="bodyButtans">Patterns</button>
                 <button class="bodyButtans">Protection</button>
             </div>
-            <div class="body_contact">
+            <div class="body_contact border-gray">
                 <div class="fonts_container flex">
                     <div class="font_select">
                         <label for="Font" accesskey="F"> <u>F</u>ont:</label>
                         <input type="text" name="Font" id="Font" value="Verdana" class="display_block">
-                        <div class="fonts">
+                        <div class="fonts border-gray margin-left height65 overflow_y">
                             <div class="flex font_scroll">
                                 <img src="./images/TT-font.png" alt="TTfont">
-                                <p>Tw Cen MT</p> 
+                                <p>Tw Cen MT</p>
                             </div>
                             <div class="flex font_scroll">
                                 <img src="./images/TT-font.png" alt="TTfont">
@@ -47,21 +47,21 @@
                             <div class="flex font_scroll">
                                 <img src="./images/TT-font.png" alt="TTfont">
                                 <p>Tw Cen MT Condensed</p>
-                                </div>
-                                <div class="flex active_bg">
-                                    <img src="./images/TT-font.png" alt="TTfont">
-                                    <P>Verdana</P>
-                                </div>
-                                <div>
-                                    <img src="./images/TT-font.png" alt="TTfont">
-                                    <p>Verdana</p>
-                                </div>
+                            </div>
+                            <div class="flex active_bg font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">
+                                <P>Verdana</P>
+                            </div>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">
+                                <p>Verdana</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="font_style">
+                    <div class="font_style margin-left ">
                         <label for="font_style" accesskey="o">F<u>o</u>nt style:</label>
                         <input type="text" name="Regular" id="font_style" value="Regular">
-                        <ul>
+                        <ul class="border-gray height65 overflow_y">
                             <li class="active_bg">Regular</li>
                             <li>Italic</li>
                             <li>Bold</li>
@@ -71,7 +71,7 @@
                     <div class="size">
                         <label for="size" accesskey="S"><u>S</u>ize:</label>
                         <input type="text" id="size" name="size" value="10">
-                        <ul>
+                        <ul class="border-gray margin-left height65 overflow_y">
                             <li>8</li>
                             <li>9</li>
                             <li class="active_bg">10</li>
@@ -82,8 +82,8 @@
                 </div>
 
                 <div class="underline_color flex">
-                    <div class="underline">
-                        <label class="display_block" for="Underline" id="underline"
+                    <div class="underline margin-left">
+                        <label class="display_block display_block" for="Underline" id="underline"
                             accesskey="U"><u>U</u>nderline:</label>
                         <select name="Underline" id="Underline">
                             <option value="None">None</option>
@@ -108,15 +108,15 @@
                         <legend>Effects</legend>
                         <div class="radiosbtn">
                             <ul>
-                                <li class="flex">
+                                <li class="flex align_items_Center">
                                     <input type="checkbox" id="Strikethrough">
                                     <label for="Strikethrough">Strikethrough</label>
                                 </li>
-                                <li class="flex">
+                                <li class="flex align_items_Center">
                                     <input type="checkbox" id="Superscript" accesskey="b">
                                     <label for="Superscript">Superscript</label>
                                 </li>
-                                <li class="flex">
+                                <li class="flex align_items_Center">
                                     <input type="checkbox" id="Subscript" accesskey="b">
                                     <label for="Subscript">Subscript</label>
                                 </li>
@@ -127,7 +127,7 @@
                     <div class="preview">
                         <fieldset class="fieldset2">
                             <legend>Preview</legend>
-                            <div class="preview_contect flex">
+                            <div class="preview_contect flex justify_content_spceBTN">
                                 <p id="first_para">____</p>
                                 <div id="sec_Para">
                                     <p>AaBbCcYyZz</p>
@@ -140,7 +140,7 @@
 
                 <div class="para">
                     <p>This is a true Type font. git commit -m "first commit"
-                    git branch -M mainThe same font will
+                        git branch -M mainThe same font will
                         be used on both your printer and your screen.</p>
                 </div>
             </div>
@@ -151,6 +151,7 @@
                 <input type="button" value="Cancel">
             </div>
 
+            
         </div>
     </div>
 </body>
