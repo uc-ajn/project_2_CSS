@@ -276,6 +276,7 @@ legend{color: #0046d5;}
   width: 70px;
   height: 20px;
   margin-top: 14px;
+  border: 1px solid rgb(0, 0, 167);
 }
 
 #btn_ok{
